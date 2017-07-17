@@ -251,6 +251,15 @@ a:visited {
 	h2 {
 		font-size: 30px;
 	}
+
+	.arrow {
+		width: 45px;
+	}
+
+	.arrow-image {
+		width: 30px;
+	}
+
 }
 
 
