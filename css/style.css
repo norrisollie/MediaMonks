@@ -14,6 +14,7 @@ h2 {
     margin: 0;
     font-size: 60px;
     text-shadow: 1px 1px 1px #000;
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -97,6 +98,10 @@ p {
     height: calc(100vh - 144px);
 }
 
+.section-zero {
+    justify-content: space-between;
+}
+
 .section-nine {
     z-index: 4000;
 }
@@ -133,10 +138,18 @@ p {
     overflow: hidden;
 }
 
-/* header element styles */
+/* header and intro element styles */
+
+.intro {
+    margin-left: -80px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 1px 1px #000;
+}
+
 .header-topleft {
-    margin-top: 50px;
-    margin-left: -50px;
+    margin-top: 20px;
+    margin-left: -80px;
     align-self: flex-start;
 }
 
@@ -266,10 +279,6 @@ p {
     opacity: 0;
 }
 
-
-/* end arrows styling */
-
-
 /* social */
 
 .social-container {
@@ -315,15 +324,15 @@ p {
 }
 
 .icon-facebook {
-    background-image: url(../assets/images/facebook.svg)
+    background-image: url(./assets/images/facebook.svg)
 }
 
 .icon-twitter {
-    background-image: url(../assets/images/twitter.svg)
+    background-image: url(./assets/images/twitter.svg)
 }
 
 .icon-mail {
-    background-image: url(../assets/images/mail.svg)
+    background-image: url(./assets/images/mail.svg)
 }
 
 @media only screen and (max-width: 768px) {
