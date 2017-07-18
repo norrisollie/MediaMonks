@@ -336,18 +336,6 @@ p {
     color: #FFF;
 }
 
-.icon-facebook {
-    background-image: url(assets/images/facebook.svg)
-}
-
-.icon-twitter {
-    background-image: url(assets/images/twitter.svg)
-}
-
-.icon-mail {
-    background-image: url(assets/images/mail.svg)
-}
-
 /* media queries */
 @media only screen and (max-width: 768px) {
 
