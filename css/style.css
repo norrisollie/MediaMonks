@@ -326,9 +326,99 @@ p {
     background-image: url(../assets/images/mail.svg)
 }
 
-@media only screen and (max-width: 700px) {
 
-    body {
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .arrow {
+        width: 35px;
+    }
+
+    .arrow:hover {
+        width: 40px;
+    }
+
+    .arrow-image {
+        width: 30px;
+    }
+
+    .section {
+        left: 55px;
+        right: 55px;
+    }
+
+    .header-topleft {
+        margin-left: -25px;
+    }
+
+    .header-topright {
+        margin-right: -25px;
+    }
+
+    .number-span {
+        width: 18px;
+        height: 16px;
+    }
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .arrow {
+        width: 35px;
+    }
+
+    .arrow:hover {
+        width: 40px;
+    }
+
+    .arrow-image {
+        width: 30px;
+    }
+
+    .section {
+        left: 55px;
+        right: 55px;
+    }
+
+    .header-topleft {
+        margin-left: -25px;
+    }
+
+    .header-topright {
+        margin-right: -25px;
+    }
+
+    .number-span {
+        width: 18px;
+        height: 16px;
+    }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  body {
         font-size: 14px;
     }
 
