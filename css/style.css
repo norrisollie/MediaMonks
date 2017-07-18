@@ -1,6 +1,7 @@
 /* stylesheet */
 
-body, html {
+body,
+html {
     font-family: "Klavika", "Helvetica Neue";
     font-style: normal;
     font-weight: 400;
@@ -21,11 +22,13 @@ p {
     -webkit-font-smoothing: antialiased;
 }
 
+
 /* background element styles */
+
 .background-container {
     display: flex;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     height: 100vh;
     width: auto;
@@ -43,9 +46,11 @@ p {
     width: 100%;
 }
 
+
 /* css used to move background */
+
 .background-section-0 {
-    transform: translateY(0%);
+    transform: translateX(-0%);
 }
 
 .background-section-1 {
@@ -84,9 +89,7 @@ p {
     transform: translateX(-100%);
 }
 
-
 /* section element styles */
-
 .section {
     display: flex;
     flex-direction: column;
@@ -95,15 +98,11 @@ p {
     left: 100px;
     right: 100px;
     transition: all 1s ease;
-    height: calc(100vh - 144px);
+    height: calc(100vh - 103px);
 }
 
 .section-zero {
     justify-content: space-between;
-}
-
-.section-nine {
-    z-index: 4000;
 }
 
 .section-container {
@@ -125,7 +124,10 @@ p {
     flex-direction: column;
     font-weight: 400;
 }
+
+
 /* fixed-screen container */
+
 .screen-fixed {
     position: fixed;
     top: 0;
@@ -133,13 +135,12 @@ p {
     bottom: 0;
     right: 0;
     height: 100vh;
-    z-index: 1000;
+    z-index: 9000;
     background-color: transparent;
     overflow: hidden;
 }
 
 /* header and intro element styles */
-
 .intro {
     margin-left: -80px;
     display: flex;
@@ -178,15 +179,20 @@ p {
     bottom: 0;
     z-index: 1100;
     background-color: transparent;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     box-sizing: border-box;
     z-index: 5000;
+}
+
+.number-section-left {
+    display: flex;
+    flex-direction: row;
 }
 
 .number-controls-container {
     display: flex;
     flex-wrap: nowrap;
-    margin-bottom: 10px;
+    margin: 0 20px 0 0;
 }
 
 .number-controls {
@@ -222,7 +228,13 @@ p {
 }
 
 .number-active {
-    background-color: #FFF
+    background-color: #FFF;
+}
+
+.section-of-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-of {
@@ -244,13 +256,15 @@ p {
     width: 100%;
 }
 
+
 /* arrows styling*/
+
 .arrow {
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    height: calc(100vh - 144px);
+    height: calc(100vh - 103px);
     width: 75px;
     align-items: center;
     background-color: transparent;
@@ -280,12 +294,11 @@ p {
 }
 
 /* social */
-
 .social-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    z-index: 3000;
+    z-index: 10000;
 }
 
 .icon {
@@ -335,6 +348,7 @@ p {
     background-image: url(./assets/images/mail.svg)
 }
 
+/* media queries */
 @media only screen and (max-width: 768px) {
 
     body {
