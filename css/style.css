@@ -1,295 +1,369 @@
 /* stylesheet */
 
 body {
-	font-family: "Klavika";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	color: #FFF;
+    font-family: "Klavika";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFF;
+    overflow: hidden;
 }
 
+.container {
+    max-width: 1440px;
+}
+
+
+/* background element styles */
+
+.background-container {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    right: auto;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 2s ease;
+    overflow: hidden;
+}
+
+.background {
+    position: relative;
+    max-height: 100%;
+}
+
+
+/* css used to move background */
+
+.background-section-0 {
+    transform: translateY(0%);
+}
+
+.background-section-1 {
+    transform: translateX(-11%);
+}
+
+.background-section-2 {
+    transform: translateX(-19%);
+}
+
+.background-section-3 {
+    transform: translateX(-31%);
+}
+
+.background-section-4 {
+    transform: translateX(-42.5%);
+}
+
+.background-section-5 {
+    transform: translateX(-55%);
+}
+
+.background-section-6 {
+    transform: translateX(-67%);
+}
+
+.background-section-7 {
+    transform: translateX(-80%);
+}
+
+.background-section-8 {
+    transform: translateX(-83%);
+}
+
+.background-section-9 {
+    transform: translateX(-100%);
+}
+
+
+/* section element styles */
+
 .section {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	z-index: 999;
-	top: 0;
-	left: 100px;
-	right: 100px;
-	height: calc(100% - 144px);
-	transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 100px;
+    right: 100px;
+    height: calc(100% - 144px);
+    transition: all 1s ease;
 }
 
 .section-nine {
-	z-index: 4000;
+    z-index: 4000;
 }
 
 .section-container {
-	width: 100vw;
-	height: 100vh;
-	background-color: #000;
-	position: relative;
-	left: 0;
-	top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .section-hidden {
-	visibility: hidden;
-	opacity: 0;
-}
-
-/* section header */
-
-h2 {
-	margin: 0;
-	font-size: 60px;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .section-header {
-	display: flex;
-	flex-direction: column;
-	font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+
+/* header element styles */
+
+h2 {
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .header-topleft {
-	margin-top: 50px;
-	margin-left: -50px;
-	align-self: flex-start;
+    margin-top: 50px;
+    margin-left: -50px;
+    align-self: flex-start;
 }
 
 .header-center {
-	justify-content: center;
+    justify-content: center;
 }
 
 .header-topright {
-	margin-top: 50px;
-	margin-right: -50px;
-	align-self: flex-start;
-	text-align: right;
+    margin-top: 50px;
+    margin-right: -50px;
+    align-self: flex-start;
+    text-align: right;
 }
 
 .header-right {
-	text-align: right;
+    text-align: right;
 }
 
+
 /* fixed-screen container */
+
 .screen-fixed {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	z-index: 1000;
-	background-color: transparent;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: transparent;
 }
 
 .number-section {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	z-index: 1100;
-	background-color: transparent;
-	padding: 20px;
-	box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1100;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .number-controls-container {
-	display: flex;
-	flex-wrap: nowrap;
-	margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
 }
 
 .number-controls {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	list-style-type: none;
-	padding: 2px 0 2px 0;
-	margin: 0;
-	border: 1px solid #FFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding: 2px 0 2px 0;
+    margin: 0;
+    border: 1px solid #FFF;
 }
 
 .number {
-	border-right: 1px solid #FFF;
+    border-right: 1px solid #FFF;
 }
 
 .number:last-child {
-	border-right: none;
+    border-right: none;
 }
 
 .number-span {
-	display: block;
-	width: 20px;
-	height: 16px;
-	margin: 0 2px 0 2px;
-	text-align: center;
-	transition: background-color 0.5s ease;
+    display: block;
+    width: 20px;
+    height: 16px;
+    margin: 0 2px 0 2px;
+    text-align: center;
+    transition: background-color 0.5s ease;
 }
 
 .number-span:hover {
-	background-color: #FFF;
-	cursor: pointer;
+    background-color: #FFF;
+    cursor: pointer;
 }
 
 .number-active {
-	background-color: #FFF
+    background-color: #FFF
 }
 
 .section-of {
-	margin: 0;
-	transition: all 1s ease;
+    margin: 0;
+    transition: all 1s ease;
 }
 
 .section-of-hidden {
-	visibility: hidden;
-	opacity: 0;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .logo-container {
-	width: 100px;
-	margin-left: auto;
+    width: 100px;
+    margin-left: auto;
 }
 
 .logo {
-	width: 100%;
+    width: 100%;
 }
 
+
 /* arrows styling*/
+
 .arrow {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	position: absolute;
-	height: calc(100vh - 144px);
-	width: 75px;
-	align-items: center;
-	background-color: transparent;
-	transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: calc(100vh - 144px);
+    width: 75px;
+    align-items: center;
+    background-color: transparent;
+    transition: all 0.5s ease;
 }
 
 .arrow:hover {
-	width: 100px;
-	cursor: pointer;
+    width: 100px;
+    cursor: pointer;
 }
 
 .arrow-left {
-	left: 0;
+    left: 0;
 }
 
 .arrow-right {
-	right: 0;
+    right: 0;
 }
 
 .arrow-image {
-	width: 50px;
+    width: 50px;
 }
 
 .arrow-hidden {
-	visibility: hidden;
-	opacity: 0;
+    visibility: hidden;
+    opacity: 0;
 }
+
+
 /* end arrows styling */
+
 
 /* social */
 
 .social-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	z-index: 3000;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 3000;
 }
 
 .icon {
-	padding-right: 5px;
+    padding-right: 5px;
 }
 
 .icon-image {
-	width: 20px;
-	height: 20px;
-	position: relative;
-	bottom: -2px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: -2px;
 }
 
 .social {
-	display: flex;
-	height: 20px;
-	align-items: center;
-	padding-right: 10px;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    padding-right: 10px;
 }
 
 .social:last-child {
-	padding-right: 0;
+    padding-right: 0;
 }
 
 .social-link {
-	text-decoration: none;
-	color: #FFF;
+    text-decoration: none;
+    color: #FFF;
 }
 
 .social-link:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .social-link:visited {
-	color: #FFF;
+    color: #FFF;
 }
 
 .icon-facebook {
-	background-image: url(../assets/images/facebook.svg)
+    background-image: url(../assets/images/facebook.svg)
 }
 
 .icon-twitter {
-	background-image: url(../assets/images/twitter.svg)
+    background-image: url(../assets/images/twitter.svg)
 }
 
 .icon-mail {
-	background-image: url(../assets/images/mail.svg)
+    background-image: url(../assets/images/mail.svg)
 }
 
 @media only screen and (max-width: 700px) {
-	h2 {
-		font-size: 30px;
-	}
 
-	.arrow {
-		width: 45px;
-	}
+    body {
+        font-size: 10px;
+    }
 
-	.arrow:hover {
-		width: 60px;
-	}
+    h2 {
+        font-size: 30px;
+    }
 
-	.arrow-image {
-		width: 30px;
-	}
+    .arrow {
+        width: 45px;
+    }
 
-	.section {
-		left: 55px;
-		right: 55px;
-	}
+    .arrow:hover {
+        width: 60px;
+    }
 
-	.header-topleft {
-		margin-left: -25px;
-	}
+    .arrow-image {
+        width: 30px;
+    }
 
-	.header-topright {
-		margin-right: -25px;
-	}
+    .section {
+        left: 55px;
+        right: 55px;
+    }
 
+    .header-topleft {
+        margin-left: -25px;
+    }
+
+    .header-topright {
+        margin-right: -25px;
+    }
+
+    .number-span {
+        width: 13px;
+        height: auto;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
