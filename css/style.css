@@ -330,7 +330,7 @@ p {
 /** 
  * iPad with portrait orientation.
  */
-@media all and (max-width: 768px) and (max-height: 1024px) and (orientation:portrait){
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
   body {
         font-size: 14px;
     }
@@ -373,7 +373,7 @@ p {
 /** 
  * iPad with landscape orientation.
  */
-@media all and (max-width: 768px) and (max-height: 1024px) and (orientation:landscape){
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
   body {
         font-size: 14px;
     }
