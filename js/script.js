@@ -83,19 +83,19 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-0");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[0].classList.remove("section-hidden");
-                }, 1000);
+                
 
                 arrowLeft.dataset.nextsection = "0";
                 arrowRight.dataset.next = "2";
 
                 if (numberButtons[0].classList.contains("number-active")) {
                     arrow[0].classList.add("arrow-hidden");
-                    setTimeout(function() {
+                    
                         arrow[1].classList.remove("arrow-hidden");
-                    }, 1000);
+                    
                 }
 
                 break;
@@ -113,7 +113,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-1");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[1].classList.remove("section-hidden");
 
@@ -122,7 +122,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.nextsection = "0";
@@ -145,7 +145,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-2");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[2].classList.remove("section-hidden");
 
@@ -154,7 +154,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.nextsection = "1";
@@ -175,7 +175,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-3");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[3].classList.remove("section-hidden");
 
@@ -184,7 +184,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.nextsection = "2";
@@ -205,7 +205,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-4");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[4].classList.remove("section-hidden");
 
@@ -214,7 +214,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.nextsection = "3";
@@ -235,7 +235,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-5");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[5].classList.remove("section-hidden");
 
@@ -244,7 +244,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.nextsection = "4";
@@ -265,7 +265,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-6");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[6].classList.remove("section-hidden");
 
@@ -274,7 +274,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.nextsection = "5";
@@ -295,7 +295,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-7");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[7].classList.remove("section-hidden");
 
@@ -304,7 +304,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.nextsection = "6";
@@ -325,7 +325,7 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-8");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[8].classList.remove("section-hidden");
 
@@ -334,7 +334,7 @@ function app() {
                         arrow[1].classList.remove("arrow-hidden");
                     }
 
-                }, 1000);
+                
 
 
                 // change datasets for arrow based on what section has been clicked
@@ -356,16 +356,16 @@ function app() {
                 // add class to move background
                 background.classList.add("background-section-9");
 
-                setTimeout(function() {
+                
                     // remove hidden on respective section element
                     sections[9].classList.remove("section-hidden");
-                }, 1000);
+                
 
                 if (numberButtons[9].classList.contains("number-active")) {
                     arrow[1].classList.add("arrow-hidden");
-                    setTimeout(function() {
+                    
                         arrow[0].classList.remove("arrow-hidden");
-                    }, 1000);
+                    
                 }
 
                 // change datasets for arrow based on what section has been clicked

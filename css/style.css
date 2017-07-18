@@ -1,7 +1,7 @@
 /* stylesheet */
 
 body, html {
-    font-family: "Klavika", "Helvetica Neue", sans-serif;
+    font-family: "Klavika", "Helvetica Neue";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -10,11 +10,21 @@ body, html {
     position: relative;
 }
 
+h2 {
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+p {
+    -webkit-font-smoothing: antialiased;
+}
+
 /* background element styles */
 .background-container {
     display: flex;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     right: auto;
     top: 0;
     left: 0;
@@ -91,7 +101,7 @@ body, html {
 
 .section-container {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-color: #000;
     position: relative;
     left: 0;
@@ -113,20 +123,13 @@ body, html {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 1000;
     background-color: transparent;
 }
 
-
 /* header element styles */
-
-h2 {
-    margin: 0;
-    font-size: 60px;
-    text-shadow: 1px 1px 1px #000;
-}
-
 .header-topleft {
     margin-top: 50px;
     margin-left: -50px;
@@ -224,15 +227,13 @@ h2 {
     width: 100%;
 }
 
-
 /* arrows styling*/
-
 .arrow {
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    height: calc(100% - 144px);
+    height: calc(100vh - 144px);
     width: 75px;
     align-items: center;
     background-color: transparent;
