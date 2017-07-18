@@ -370,6 +370,18 @@ p {
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size:  40px;
+    }
+
+}
+
 /** 
  * iPad with landscape orientation.
  */
