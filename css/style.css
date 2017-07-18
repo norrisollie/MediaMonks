@@ -336,7 +336,7 @@ h2 {
 @media only screen and (max-width: 700px) {
 
     body {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     h2 {
@@ -369,7 +369,7 @@ h2 {
     }
 
     .number-span {
-        width: 13px;
-        height: auto;
+        width: 15px;
+        height: 11px;
     }
 }
