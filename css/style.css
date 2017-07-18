@@ -144,6 +144,7 @@ h2 {
     margin-right: -50px;
     align-self: flex-start;
     text-align: right;
+    box-sizing: border-box;
 }
 
 .header-right {
@@ -156,7 +157,7 @@ h2 {
 .screen-fixed {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     z-index: 1000;
     background-color: transparent;
 }
