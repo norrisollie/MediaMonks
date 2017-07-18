@@ -1,7 +1,7 @@
 /* stylesheet */
 
 body, html {
-    font-family: "Helvetica";
+    font-family: "Klavika", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -14,7 +14,7 @@ body, html {
 .background-container {
     display: flex;
     position: absolute;
-    height: 100vh;
+    height: 100%;
     right: auto;
     top: 0;
     left: 0;
@@ -27,7 +27,6 @@ body, html {
     position: relative;
     height: 100%;
 }
-
 
 /* css used to move background */
 
@@ -92,7 +91,7 @@ body, html {
 
 .section-container {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #000;
     position: relative;
     left: 0;
@@ -233,7 +232,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    height: calc(100vh - 144px);
+    height: calc(100% - 144px);
     width: 75px;
     align-items: center;
     background-color: transparent;
