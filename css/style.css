@@ -326,46 +326,6 @@ p {
     background-image: url(../assets/images/mail.svg)
 }
 
-@media only screen and (max-width: 700px) {
-
-    body {
-        font-size: 14px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    .arrow {
-        width: 35px;
-    }
-
-    .arrow:hover {
-        width: 40px;
-    }
-
-    .arrow-image {
-        width: 30px;
-    }
-
-    .section {
-        left: 55px;
-        right: 55px;
-    }
-
-    .header-topleft {
-        margin-left: -25px;
-    }
-
-    .header-topright {
-        margin-right: -25px;
-    }
-
-    .number-span {
-        width: 18px;
-        height: 16px;
-    }
-}
 
 /** 
  * iPad with portrait orientation.
