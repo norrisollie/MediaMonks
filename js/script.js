@@ -24,20 +24,20 @@ function app() {
     for(var i = 0; i < arrow.length; i++) {
 
     	//add event listener
-    	arrow[i].addEventListener("click", arrowClick);
+    	arrow[i].addEventListener("click", clickButtons);
     }
 
-    // function run when arrow is clicked
-    function arrowClick(e) {
+    // // function run when arrow is clicked
+    // function arrowClick(e) {
     	
-    	// target element
-    	var clickTarget = e.target;
-    	// target dataset value
-    	var clickTargetData = e.currentTarget.dataset.currentsection;
-    	// log target dataset to console
-    	console.log(clickTargetData)
+    // 	// target element
+    // 	var clickTarget = e.target;
+    // 	// target dataset value
+    // 	var clickTargetData = e.currentTarget.dataset.currentsection;
+    // 	// log target dataset to console
+    // 	console.log(clickTargetData)
 
-    }
+    // }
 
     // 	// switch statement to determine what to do when arrow is pressed
     // 	switch(clickTargetData) {
@@ -95,6 +95,8 @@ function app() {
         var clickTarget = e.target;
         // target element dataset value
         var clickTargetData = e.currentTarget.dataset.section;
+        // target element dataset value
+        var clickTargetDataArrow = e.currentTarget.dataset.currentsection;
         // store buttons in dom
         var numberButtons = document.querySelectorAll(".number-span");
         // store arrows in DOM
@@ -147,7 +149,9 @@ function app() {
 
                 if (numberButtons[0].classList.contains("number-active")) {
                     arrow[0].classList.add("arrow-hidden");
-                    arrow[1].classList.remove("arrow-hidden");
+                    setTimeout(function(){
+                        arrow[1].classList.remove("arrow-hidden");
+                    },1000);
                 }
 
                 break;
@@ -164,16 +168,19 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[1].classList.remove("section-hidden");
+
+                if (numberButtons[1].classList.contains("number-active")) {
+                    arrow[0].classList.remove("arrow-hidden");
+                    arrow[1].classList.remove("arrow-hidden");
+                }
+
                 },1000);
 
                 // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.currentsection = clickTargetData;
                 arrowRight.dataset.currentsection = clickTargetData;
 
-                if (numberButtons[1].classList.contains("number-active")) {
-                    arrow[0].classList.remove("arrow-hidden");
-                    arrow[1].classList.remove("arrow-hidden");
-                }
+                
 
                 break;
 
@@ -189,16 +196,17 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[2].classList.remove("section-hidden");
-                },1000);
-
-                 // change datasets for arrow based on what section has been clicked
-                arrowLeft.dataset.currentsection = clickTargetData;
-                arrowRight.dataset.currentsection = clickTargetData;
 
                 if (numberButtons[2].classList.contains("number-active")) {
                     arrow[0].classList.remove("arrow-hidden");
                     arrow[1].classList.remove("arrow-hidden");
                 }
+
+                },1000);
+
+                 // change datasets for arrow based on what section has been clicked
+                arrowLeft.dataset.currentsection = clickTargetData;
+                arrowRight.dataset.currentsection = clickTargetData;
 
                 break;
 
@@ -214,16 +222,17 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[3].classList.remove("section-hidden");
-                },1000);
-
-                 // change datasets for arrow based on what section has been clicked
-                arrowLeft.dataset.currentsection = clickTargetData;
-                arrowRight.dataset.currentsection = clickTargetData;
 
                 if (numberButtons[3].classList.contains("number-active")) {
                     arrow[0].classList.remove("arrow-hidden");
                     arrow[1].classList.remove("arrow-hidden");
                 }
+
+                },1000);
+
+                 // change datasets for arrow based on what section has been clicked
+                arrowLeft.dataset.currentsection = clickTargetData;
+                arrowRight.dataset.currentsection = clickTargetData;
 
                 break;
 
@@ -239,16 +248,17 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[4].classList.remove("section-hidden");
-                },1000);
-
-                 // change datasets for arrow based on what section has been clicked
-                arrowLeft.dataset.currentsection = clickTargetData;
-                arrowRight.dataset.currentsection = clickTargetData;
 
                 if (numberButtons[4].classList.contains("number-active")) {
                     arrow[0].classList.remove("arrow-hidden");
                     arrow[1].classList.remove("arrow-hidden");
                 }
+
+                },1000);
+
+                 // change datasets for arrow based on what section has been clicked
+                arrowLeft.dataset.currentsection = clickTargetData;
+                arrowRight.dataset.currentsection = clickTargetData;
 
                 break;
 
@@ -264,16 +274,17 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[5].classList.remove("section-hidden");
-                },1000);
-
-                 // change datasets for arrow based on what section has been clicked
-                arrowLeft.dataset.currentsection = clickTargetData;
-                arrowRight.dataset.currentsection = clickTargetData;
 
                 if (numberButtons[5].classList.contains("number-active")) {
                     arrow[0].classList.remove("arrow-hidden");
                     arrow[1].classList.remove("arrow-hidden");
                 }
+
+                },1000);
+
+                 // change datasets for arrow based on what section has been clicked
+                arrowLeft.dataset.currentsection = clickTargetData;
+                arrowRight.dataset.currentsection = clickTargetData;
 
                 break;
 
@@ -289,16 +300,17 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[6].classList.remove("section-hidden");
-                },1000);
-
-                 // change datasets for arrow based on what section has been clicked
-                arrowLeft.dataset.currentsection = clickTargetData;
-                arrowRight.dataset.currentsection = clickTargetData;
 
                 if (numberButtons[6].classList.contains("number-active")) {
                     arrow[0].classList.remove("arrow-hidden");
                     arrow[1].classList.remove("arrow-hidden");
                 }
+
+                },1000);
+
+                 // change datasets for arrow based on what section has been clicked
+                arrowLeft.dataset.currentsection = clickTargetData;
+                arrowRight.dataset.currentsection = clickTargetData;
 
                 break;
 
@@ -314,16 +326,17 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[7].classList.remove("section-hidden");
-                },1000);
-
-                 // change datasets for arrow based on what section has been clicked
-                arrowLeft.dataset.currentsection = clickTargetData;
-                arrowRight.dataset.currentsection = clickTargetData;
 
                 if (numberButtons[7].classList.contains("number-active")) {
                     arrow[0].classList.remove("arrow-hidden");
                     arrow[1].classList.remove("arrow-hidden");
                 }
+
+                },1000);
+
+                 // change datasets for arrow based on what section has been clicked
+                arrowLeft.dataset.currentsection = clickTargetData;
+                arrowRight.dataset.currentsection = clickTargetData;
 
                 break;
 
@@ -339,17 +352,18 @@ function app() {
                 setTimeout(function(){
                 // remove hidden on respective section element
                 sections[8].classList.remove("section-hidden");
+
+                if (numberButtons[8].classList.contains("number-active")) {
+                    arrow[0].classList.remove("arrow-hidden");
+                    arrow[1].classList.remove("arrow-hidden");
+                }
+
                 },1000);
 
 
                  // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.currentsection = clickTargetData;
                 arrowRight.dataset.currentsection = clickTargetData;
-
-                if (numberButtons[8].classList.contains("number-active")) {
-                    arrow[0].classList.remove("arrow-hidden");
-                    arrow[1].classList.remove("arrow-hidden");
-                }
 
                 break;
 
@@ -367,14 +381,16 @@ function app() {
                 sections[9].classList.remove("section-hidden");
                 },1000);
 
+                if (numberButtons[9].classList.contains("number-active")) {
+                    arrow[1].classList.add("arrow-hidden");
+                    setTimeout(function(){
+                        arrow[0].classList.remove("arrow-hidden");
+                    },1000);
+                }
+
                  // change datasets for arrow based on what section has been clicked
                 arrowLeft.dataset.currentsection = clickTargetData;
                 arrowRight.dataset.currentsection = clickTargetData;
-
-                if (numberButtons[9].classList.contains("number-active")) {
-                    arrow[1].classList.add("arrow-hidden");
-                    arrow[0].classList.remove("arrow-hidden");
-                }
 
                 break;
 

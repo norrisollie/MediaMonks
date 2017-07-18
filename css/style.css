@@ -165,7 +165,7 @@ h2 {
 	width: 75px;
 	align-items: center;
 	background-color: transparent;
-	transition: width 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .arrow:hover {
@@ -231,6 +231,10 @@ h2 {
 	text-decoration: underline;
 }
 
+.social-link:visited {
+	color: #FFF;
+}
+
 .icon-facebook {
 	background-image: url(../assets/images/facebook.svg)
 }
@@ -243,10 +247,6 @@ h2 {
 	background-image: url(../assets/images/mail.svg)
 }
 
-a:visited {
-	color: #FFF;
-}
-
 @media only screen and (max-width: 700px) {
 	h2 {
 		font-size: 30px;
@@ -256,8 +256,25 @@ a:visited {
 		width: 45px;
 	}
 
+	.arrow:hover {
+		width: 60px;
+	}
+
 	.arrow-image {
 		width: 30px;
+	}
+
+	.section {
+		left: 55px;
+		right: 55px;
+	}
+
+	.header-topleft {
+		margin-left: -25px;
+	}
+
+	.header-topright {
+		margin-right: -25px;
 	}
 
 }
