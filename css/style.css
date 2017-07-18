@@ -173,6 +173,7 @@ h2 {
     background-color: transparent;
     padding: 20px;
     box-sizing: border-box;
+    z-index: 5000;
 }
 
 .number-controls-container {
