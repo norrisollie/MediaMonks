@@ -337,15 +337,15 @@ p {
 }
 
 .icon-facebook {
-    background-image: url(assets/images/facebook.svg)
+    background-image: url(../assets/images/facebook.svg)
 }
 
 .icon-twitter {
-    background-image: url(assets/images/twitter.svg)
+    background-image: url(../assets/images/twitter.svg)
 }
 
 .icon-mail {
-    background-image: url(assets/images/mail.svg)
+    background-image: url(../assets/images/mail.svg)
 }
 
 /* media queries */
