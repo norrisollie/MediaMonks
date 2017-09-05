@@ -86,6 +86,10 @@ function numberButtonsClick(e) {
                 currentSection.innerHTML = "8";
             }
 
+             // change the nextsection dataset for arrows
+                arrows[0].dataset.nextsection = sectionNumberArr[i - 1];
+                arrows[1].dataset.nextsection = sectionNumberArr[i + 1];
+
             // remove hidden class from section-of element
                 sectionOf.classList.remove("hidden");
 
@@ -98,9 +102,6 @@ function numberButtonsClick(e) {
                 // remove hidden class from both left/right arrows
                 arrows[0].classList.remove("hidden");
                 arrows[1].classList.remove("hidden");
-                // change the nextsection dataset for arrows
-                arrows[0].dataset.nextsection = sectionNumberArr[i - 1];
-                arrows[1].dataset.nextsection = sectionNumberArr[i + 1];
 
                 // if first section element contains active, hide left arrow
                 if (sections[0].classList.contains("active")) {

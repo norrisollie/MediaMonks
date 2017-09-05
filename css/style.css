@@ -234,12 +234,12 @@ p {
 
 .arrow-left {
     left: 0;
-    background-image: url(/assets/images/left.svg);
+    background-image: url(../assets/images/left.svg);
 }
 
 .arrow-right {
     right: 0;
-    background-image: url(/assets/images/right.svg);
+    background-image: url(../assets/images/right.svg);
 }
 
 .button-active {
